@@ -1,0 +1,6 @@
+{
+  "name": "ProInvoice Digital",
+  "short_name": "ProInvoice",
+  "description": "Géré par Vite PWA",
+  "display": "standalone"
+}
