@@ -7,15 +7,11 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
         name: 'ProInvoice Digital',
         short_name: 'ProInvoice',
-        description: 'Application de facturation professionnelle pour services digitaux',
+        description: 'Application de facturation professionnelle',
         theme_color: '#000000',
-        background_color: '#FAFAFA',
-        display: 'standalone',
-        orientation: 'portrait-primary',
         icons: [
           {
             src: 'https://cdn-icons-png.flaticon.com/512/2910/2910768.png',
@@ -30,5 +26,9 @@ export default defineConfig({
         ]
       }
     })
-  ]
+  ],
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  }
 });
