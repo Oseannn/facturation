@@ -8,8 +8,9 @@
     
     <!-- PWA Theme Color -->
     <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" />
     
-    <!-- Tailwind CSS (CDN conservé pour simplifier le setup sans PostCSS) -->
+    <!-- Tailwind CSS (On garde le CDN pour la simplicité, c'est valide) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -49,6 +50,7 @@
 </head>
   <body class="text-zinc-900 selection:bg-black selection:text-white">
     <div id="root"></div>
+    <!-- Seul ce script doit rester pour que Vercel construise l'app correctement -->
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
